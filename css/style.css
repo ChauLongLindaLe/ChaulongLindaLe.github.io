@@ -1,64 +1,69 @@
+.title {
+  font-family: "Oswald";
+  color: #ad2500;
+  text-transform: uppercase; }
+
 .hero {
-  /* Control the left side */
-  /* Control the right side */
-  background: none;
+  background-repeat: no-repeat;
+  background-position: fixed;
+  background: url("https://i.imgur.com/aKCvwx4.png");
+  height: 100vh;
+  color: #ad2500;
   background-size: cover;
-  height: 112vh;
-  background-color: black;
-  width: 100%;
-  margin: 0;
+  background-color: white;
+  margin-left: 10vw;
+  max-width: 60vw;
+  margin: 0 auto;
   font-family: "Oswald"; }
-  .hero .split {
-    visibility: visible;
-    height: 100%;
-    width: 50%;
-    position: fixed;
-    z-index: 1;
-    top: 0;
-    overflow-x: hidden;
-    padding-top: 20px;
-    text-transform: uppercase; }
-  .hero .left {
-    left: 0;
-    background: white;
-    background-size: cover;
-    background-repeat: no-repeat; }
-    .hero .left .centered {
-      position: absolute;
-      margin-right: 0;
-      top: 50%;
-      left: 20%;
-      transform: translate(-2%, -50%);
-      text-align: center; }
-      .hero .left .centered img {
-        opacity: 0.5;
-        filter: alpha(opacity=50);
-        height: 80vh; }
-  .hero .right {
-    top: -4px;
-    background-repeat: no-repeat;
-    background-size: cover;
-    right: 0;
-    background-image: url("https://i.imgur.com/9OPhSA8.jpg"); }
-    .hero .right .centered {
-      position: absolute;
-      top: 50%;
-      left: 20%;
-      transform: translate(-30%, -50%);
-      text-align: center; }
-      .hero .right .centered h1 {
-        font-size: 4rem;
-        font-weight: 400;
-        color: white;
-        font-style: normal; }
-      .hero .right .centered .subtitle {
-        font-size: 1rem;
-        color: white; }
+  .hero h1 {
+    font-size: 10em;
+    letter-spacing: 20px;
+    color: #ad2500; }
+  .hero h2 {
+    font-size: 5em;
+    letter-spacing: 20px;
+    color: #ad2500; }
+  .hero .centered {
+    color: #ad2500;
+    position: absolute;
+    top: 30%;
+    left: 25%;
+    text-align: center; }
+
+.icons i {
+  font-size: 48px;
+  color: #ad2500; }
+
+.bio {
+  font-size: 1.3em;
+  line-height: 24px;
+  font-weight: 300; }
+  .bio .title, .bio .subtitle {
+    text-align: left; }
+
+.num {
+  position: absolute;
+  left: -41px;
+  top: -2px;
+  color: #000;
+  opacity: 0.2;
+  line-height: 44px;
+  margin-top: 20px;
+  margin-bottom: 10px;
+  font-weight: bold;
+  z-index: -1;
+  font-size: 48px; }
+
+.image-border {
+  box-shadow: 0 4px 8px 0 rgba(146, 145, 145, 0.2), 0 6px 20px 0 rgba(105, 105, 105, 0.19); }
+
+#portfolio .container {
+  margin-bottom: 15vh; }
 
 .navbar {
   width: 100%;
   position: fixed;
-  top: 50px;
+  padding-top: 10px;
   text-align: center;
   background: transparent; }
 

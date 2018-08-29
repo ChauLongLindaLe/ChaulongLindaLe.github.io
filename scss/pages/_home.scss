@@ -1,68 +1,75 @@
+.title{
+  font-family: $primary-font;
+  color: $brighter-red;
+  text-transform: uppercase;
+}
 
-  .hero {
-    .split {
-      visibility: visible;
-      height: 100%;
-      width: 50%;
-      position: fixed;
-      z-index: 1;
-      top: 0;
-      overflow-x: hidden;
-      padding-top: 20px;
-      text-transform: uppercase;
-    }
-    /* Control the left side */
-    .left {
-      left: 0;
-      background: white;
-      background-size:cover;
-      background-repeat: no-repeat;
-      .centered {
-        position: absolute;
-        margin-right: 0;
-        top: 50%;
-        left: 20%;
-        transform: translate(-2%, -50%);
-        text-align: center;
-        img{
-          opacity: 0.5;
-          filter: alpha(opacity=50);
-          height: 80vh;
-        }
-      }
-    }
+.hero{
+  background-repeat: no-repeat;
+  background-position: fixed;
+  background: url('https://i.imgur.com/aKCvwx4.png');
+  height: 100vh;
+  color: $brighter-red;
+  background-size: cover;
+  background-color: white;
+  margin-left: 10vw;
+  max-width: 60vw;
+  margin: 0 auto;
+  font-family: $primary-font;
+  h1{
+    font-size: 10em;
+    letter-spacing: 20px;
+    color: $brighter-red;
+  }
+  h2{
+    font-size: 5em;
+    letter-spacing: 20px;
+    color: $brighter-red;
+  }
+  .centered {
+    color: $brighter-red;
+    position: absolute;
+    top: 30%;
+    left: 25%;
+    text-align: center;
+  }
+}
 
-    /* Control the right side */
-    .right {
-      top: -4px;
-      background-repeat: no-repeat;
-      background-size:cover;
-      right: 0;
-      background-image: url('https://i.imgur.com/9OPhSA8.jpg');
-      .centered {
-        position: absolute;
-        top: 50%;
-        left: 20%;
-        transform: translate(-30%, -50%);
-        text-align: center;
-        h1{
-          font-size: 4rem;
-          font-weight: 400;
-          color: white;
-          font-style: normal;
-        }
-        .subtitle{
-          font-size: 1rem;
-          color: white;
-        }
-      }
-    }
-      // background-image: url('http://desktopwall.info/uploads/posts/2016-04/28_kendo.jpg');
-      background: none;
-      background-size: cover;
-      height: 112vh;
-      background-color: black;
-      width: 100%;
-      margin: 0;
-      font-family: $primary-font;
-    }
+.icons{
+  i{
+    font-size: 48px;
+    color: $brighter-red;
+  }
+}
+
+.bio{
+  font-size: 1.3em;
+  line-height: 24px;
+  font-weight: 300;
+  .title, .subtitle{
+    text-align: left;
+  }
+}
+.num{
+  position: absolute;
+  left: -41px;
+  top: -2px;
+  color: #000;
+  opacity: 0.2;
+  line-height: 44px;
+  margin-top: 20px;
+  margin-bottom: 10px;
+  font-weight: bold;
+  z-index: -1;
+  font-size: 48px;
+}
+
+.image-border {
+  box-shadow:0 4px 8px 0 rgba(146, 145, 145, 0.2), 0 6px 20px 0 rgba(105, 105, 105, 0.19);
+}
+
+#portfolio{
+  .container{
+    margin-bottom: 15vh;
+  }
+}

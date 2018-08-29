@@ -1,136 +1,384 @@
+<!-- Back to top button -->
 <!DOCTYPE html>
-<html lang="en" dir="ltr">
+<html class="has-navbar-fixed-top" lang="en" dir="ltr">
 <head>
   <meta charset="utf-8">
   <title>- L  I  N  D  A -</title>
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta name="description" content="Portfolio of Linda Le, a London based web-developer">
   <meta name="itemprop" content="Portfolio of Linda Le, a London based web-developer">
+  <!-- bulma -->
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.7.1/css/bulma.min.css">
+  <!-- font family -->
   <link href="https://fonts.googleapis.com/css?family=Oswald:400,700&amp;subset=vietnamese" rel="stylesheet">
   <link rel="stylesheet" href="./css/style.css">
+  <!-- favicon -->
   <link rel="shortcut icon" type="image/x-icon" href="https://i.imgur.com/Gaqz92a.png" />
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-  <script src="./js/app.js" charset="utf-8"></script>
+  <!-- Devicons -->
+  <link rel="stylesheet" href="https://cdn.rawgit.com/konpa/devicon/df6431e323547add1b4cf45992913f15286456d3/devicon.min.css">
+  <!-- Font awesome -->
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css" integrity="sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtVlRW3tvkXWZh58N9jp" crossorigin="anonymous">
+  <!-- Bulma -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.7.1/css/bulma.min.css">
+  <!-- Scroll reveal -->
+  <script src="https://unpkg.com/scrollreveal@4.0.0/dist/scrollreveal.min.js"></script>
+
 </head>
 <body>
-
-  <nav class="navbar" role="navigation" aria-label="main navigation">
+  <nav class="navbar is-transparent is-fixed-top is-hidden-mobile" role="navigation" aria-label="main navigation">
     <div class="navbar-brand">
-      <a href="#">About</a>
-      <a href="#">Projects</a>
-      <a href="#">Contact</a>
+      <a href="#experience">Experience</a>
+      <a href="#contact">Contact Me</a>
     </div>
   </nav>
   <main>
+    <!-- Hero -->
     <section class="hero is-fullheight">
-      <div class="split left slide-in-top">
-        <div class="centered">
-          <img src="https://i.imgur.com/HRIOAwi.png" alt="Lê in chinese">
-        </div>
-      </div>
-
-      <div class="split right slide-in-top-delayed">
-        <div class="centered">
-          <h1 class="title underline text-focus-in-delayed">//Linda Lê</h1>
-          <h2 class="subtitle text-focus-in-more-delayed">
-            //&nbsp;Web Developer
-          </h2>
-        </div>
+      <div class="centered">
+        <h1 class="title main-title">LINDA LÊ</h1>
+        <h2 class="subtitle">Wêb Dêvêlopêr</h2>
       </div>
     </section>
-
-    <section id="bio">
-      <div class="bio">
-        <h2>About me</h2>
-        <p>
+    <!-- Bio -->
+    <section id="bio" class="section reveal load-hidden columns is-multiline is-mobile">
+      <div class="bio container column is-4 is-expanded is-block has-text-centered">
+        <h1 class="num">01</h1><h1 class="title section-title"> About me</h1>
+        <p class="subtitle">
           Graduating from my Bachelors, I decided to take on the working world and after two years I felt that I wasn’t able to flex my creative muscles in the way I had envisioned for myself. With this in mind I decided to start experimenting with JavaScript, HTML and CSS and I realised that it was something that incorporated the spheres of logic and creativity.  On this realisation I decided to take the leap from being an English and Creative Writing graduate to a Junior Web Developer. It has been incredibly gratifying to see my ideas come to life with the use of what I have learnt as a result of my web development course and I cannot wait to keep creating and designing in my next company.
         </p>
+        <a class="button is-primary" href="#pitch">Read More</a>
+      </div>
+      <div class="container column is-5 image-border">
+        <img src="https://i.imgur.com/9OPhSA8.jpg" alt="Linda in kendo gear">
+        <small>Angles.</small>
       </div>
     </section>
-    <section id="skills">
-      <h2>Skills</h2>
+    <section id="skills" class="section reveal load-hidden">
+      <div class=" icons container">
+        <h1 class="num">02</h1><h2 class="title section-title">Skills</h2>
+        <h4 class="subtitle">Confident with:</h4>
+        <div class="container">
+          <i class="devicon-html5-plain"></i>
+          <i class="devicon-javascript-plain"></i>
+          <i class="devicon-css3-plain"></i>
+          <i class="devicon-sass-original"></i>
+          <i class="devicon-trello-plain"></i>
+          <i class="devicon-express-original"></i>
+          <i class="devicon-slack-plain"></i>
+        </div>
+        <h4 class="subtitle">Comfortable with:</h4>
+        <div class="container">
+          <i class="devicon-jquery-plain"></i>
+          <i class="devicon-angularjs-plain"></i>
+          <i class="devicon-nodejs-plain"></i>
+          <i class="devicon-react-plain"></i>
+          <i class="devicon-webpack-plain"></i>
+          <i class="devicon-github-plain"></i>
+          <i class="devicon-git-plain"></i>
 
+        </div>
+        <h4 class="subtitle">Dabbled with:</h4>
+        <div class="container">
+          <i class="devicon-mongodb-plain"></i>
+          <i class="devicon-heroku-original"></i>
+          <i class="devicon-mocha-plain"></i>
+          <i class="devicon-vuejs-plain"></i>
+        </div>
+      </div>
     </section>
-    <section id="portfolio">
-
-    </section>
-    <section id="experience">
-      <h2>Work Experience</h2>
-      <h4>Recruitment Consultant</h4>
-      <h4>Osmii</h4>
-      <h4>Sep - Dec 2017</h4>
-      <p>Working as a consultant with pre-IPO tech vendors across EMEA with specific focus on  DACH, Nordics and the UK to find executive/senior level sales and technical hires.
-      Responsibilities included:
-      <ul>
-        <li>Focusing on digital advertising and e-commerce ecosystems in the  executive digital media team offering fully retained recruitment solutions. </li>
-        <li>Identified, headhunted and shortlisted candidates to assess their eligibility for retained assignments.</li>
-        <li>Interviewed candidates to assess their eligibility for roles.</li>
-        <li>Assisted with the training of two junior recruitment consultants.</li>
-      </ul>
-      </p>
-
-      <h2>Geo-environmental/ Geotechnical Consultant</h2>
-      <h4>RGB Network</h4>
-      <h4>Dec 2015 - September 2017</h4>
-      <p>Working as a consultant with private sector clients in Civil & Structural Engineering sector typically placing Geotechnical, Geoenvironmental and Structural design staff.
-      <em>Responsibilities included:</em></p>
-      <ul>
-        <li>Business development calls and attended client visits to develop relationships.</li>
-        <li>Delivering KPIs to ensure targets are hit and exceeded.</li>
-        <li>Identified and interviewed candidates to assess their eligibility for roles.</li>
-        <li>Promoted job opportunities to candidates and managed expectations.</li>
-        <li>Pro-actively mapping market, undertaking business development, arranging and attending meetings to identify opportunities and marketing candidates directly to the client base.</li>
-      </ul>
-
-
-    </section>
-    <section id="education">
-      <h1>Education</h1>
-      <h2>BA (Hons)English Language and Creative Writing 2:1 - University of Gloucestershire ‘12-’15</h2>
-      <p>Studying English allowed me to develop my ability to communicate effectively but also to think creatively. How best can I tackle this issue and make it easy for another to understand? </p>
-
-
-    </section>
-    <section id="pitch">
-      <h1>“Jack of all trades, master of none”</h1>
-
-      <p>Often a phrase that we associate that in the process of trying to learn many things, you give up the mastery of any of them. I believe this to be a myth.</p>
-
-      <p>In all facets of my life I try to make sure that I am as multi-disciplined as possible. I am a Junior Web Developer, national representative for Great Britain in kendo, Aerialist and a Destroyer of Nutella jars. The saying would indicate that I could only ever achieve greatness in one, or mediocrity in all. However  as David Cole, Designer at  Quora states.</p>
-
-      <em>“Learning is not a zero-sum activity.
-        These skills are not mutually exclusive. Picking up Python won't make you forget how to kern.
-        ” </em>
-        <small>Or in my case.. Eating nutella?</small>
-
-
-        <h2>The pros of being a jack</h2>
-
-        <p>As of April 2018, I enrolled onto General Assembly’s Web Development Immersive, an intense  12-week course with 4 projects to complete that serve to reflect our development and learning of languages and concepts covered. Since starting I have found that there are more languages, frameworks and technologies out there than you can shake a stick at, and that being versatile and open to change bodes well in a continually-evolving industry.</p>
-
-        <h2>Life after GA</h2>
-        <p>I have found a love for creating and problem solving in a way that I didn’t know could really exist before. The want to continue learning, developing, creating is something that I strive for and I want to work in an environment that carries a similar jack-ethos.</p>
-
-        <p>I close on one last note, the phrase I opened with is (rarely) expanded to the full couplet which reads:</p>
-
-        <em>“Jack of all trades, master of none,
-          though oftentimes better than master of one.”</em>
-        </section>
-        <section id="about">
-
-        </section>
-      </main>
-      <footer>
-        <footer>
-          <div class="container">
-            <div class="row">
-              <a href="https://github.com/ChauLongLindaLe"><i class="fa fa-github"></i></a>
-              <a href="https://www.linkedin.com/in/chaulonglindale"><i class="fa fa-linkedin"></i></a>
-              <a href="../#/contactform"><i class="fa fa-envelope-o"></i></a>
+    <section id="portfolio" class="section reveal load-hidden">
+      <!-- kendo.io -->
+      <div class="container">
+        <h1 class="num">03</h1><h1 class="title section-title">Portfolio</h1>
+        <div class="columns is-8">
+          <div class="column">
+            <h1 class="title">Kendo.io</h1>
+            <h2 class="subtitle">
+              MERN stack app to log your kendo training</h2>
+              <h1 class="subtitle">
+                <strong>Technologies used:</strong>
+                <br> JavaScript | React | Node.js | Mongoose | MongoDB | Express | RESTful API | HTML5 | CSS3 | Heroku </h1>
+                <br>
+                <div class="icons">
+                  <i class="devicon-html5-plain"></i>
+                  <i class="devicon-css3-plain"></i>
+                  <i class="devicon-javascript-plain"></i>
+                  <i class="devicon-sass-plain"></i>
+                  <i class="devicon-webpack-plain"></i>
+                  <i class="devicon-react-plain"></i>
+                  <i class="devicon-express-original"></i>
+                  <i class="devicon-nodejs-plain"></i>
+                  <i class="devicon-mongodb-plain"></i>
+                  <i class="devicon-mocha-plain"></i>
+                </div>
+                <br>
+                <div>
+                  <a class="button is-primary" href="https://github.com/ChauLongLindaLe/kendo.io" target="_blank">
+                    <span class="icon">
+                      <i class="fab fa-github"></i>
+                    </span>
+                    <span>View on Github</span>
+                  </a>
+                  <a class="button is-primary" href="https://kendo-io.herokuapp.com/" target="_blank">
+                    <span class="icon">
+                      <i class="fas fa-desktop"></i>
+                    </span>
+                    <span>Go to site</span>
+                  </a>
+                </div>
+              </div>
+              <!-- Whats in my fridge -->
+              <div class="column is-6">
+                <div class="image-container">
+                  <figure class="image is-3by2 image-border">
+                    <a href="https://kendo-io.herokuapp.com/" target="_blank">
+                      <img src="https://media.giphy.com/media/jwSmle9cehSzWJc1rW/giphy.gif">
+                    </a>
+                  </figure>
+                </div>
+              </div>
             </div>
           </div>
-        </footer>
-      </footer>
-    </body>
-    </html>
+          <div class="container">
+            <div class="columns is-variable is-8">
+              <div class="column is-6">
+                <div class="image-container">
+                  <figure class="image is-4by3 image-border">
+                    <a href="https://what-is-in-my-fridge.herokuapp.com/" target="_blank">
+                      <img src="https://media.giphy.com/media/6qqntjhdCl4aiVnzph/giphy.gif">
+                    </a>
+                  </figure>
+                </div>
+              </div>
+              <div class="column">
+                <h1 class="title">What's in my fridge?</h1>
+                <h2 class="subtitle">
+                  MEAN stack app to reduce food wastage</h2>
+                  <h1>
+                    <strong>Technologies used:</strong>
+                    <br> JavaScript | Angular | Node.js | Mongoose | MongoDB | Express | RESTful API | HTML5 | CSS3 | Heroku </h1>
+                    <br>
+                    <div class="icons">
+                      <i class="devicon-html5-plain"></i>
+                      <i class="devicon-css3-plain"></i>
+                      <i class="devicon-javascript-plain"></i>
+                      <i class="devicon-sass-plain"></i>
+                      <i class="devicon-webpack-plain"></i>
+                      <i class="devicon-angularjs-plain"></i>
+                      <i class="devicon-express-original"></i>
+                      <i class="devicon-nodejs-plain"></i>
+                      <i class="devicon-mongodb-plain"></i>
+                      <i class="devicon-mocha-plain"></i>
+                    </div>
+                    <br>
+                    <div>
+                      <a class="button is-primary" href="https://github.com/ChauLongLindaLe/WDI-PROJECT-3" target="_blank">
+                        <span class="icon">
+                          <i class="fab fa-github"></i>
+                        </span>
+                        <span>View on Github</span>
+                      </a>
+                      <a class="button is-primary" href="https://what-is-in-my-fridge.herokuapp.com/" target="_blank">
+                        <span class="icon">
+                          <i class="fas fa-desktop"></i>
+                        </span>
+                        <span>Go to site</span>
+                      </a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <hr>
+              <!-- Flyers Island -->
+              <div class="container">
+                <div class="columns is-variable is-8">
+                  <div class="column">
+                    <h1 class="title">Flyer's Island</h1>
+                    <h2 class="subtitle">
+                      Express app to make finding aerial classes an ease</h2>
+                      <h1>
+                        <strong>Technologies used:</strong>
+                        <br> JavaScript | Node.js | Mongoose | MongoDB | Express | RESTful API | HTML5 | CSS3 | Heroku </h1>
+                        <br>
+                        <div class="icons">
+                          <i class="devicon-html5-plain"></i>
+                          <i class="devicon-css3-plain"></i>
+                          <i class="devicon-javascript-plain"></i>
+                          <i class="devicon-sass-plain"></i>
+                          <i class="devicon-express-original"></i>
+                          <i class="devicon-nodejs-plain"></i>
+                          <i class="devicon-mongodb-plain"></i>
+                        </div>
+                        <br>
+                        <div>
+                          <a class="button is-primary" href="https://github.com/ChauLongLindaLe/Project2_WDI_LDN" target="_blank">
+                            <span class="icon">
+                              <i class="fab fa-github"></i>
+                            </span>
+                            <span>View on Github</span>
+                          </a>
+                          <a class="button is-primary" href="https://flyers-island.herokuapp.com/" target="_blank">
+                            <span class="icon">
+                              <i class="fas fa-desktop"></i>
+                            </span>
+                            <span>Go to site</span>
+                          </a>
+                        </div>
+                      </div>
+                      <div class="column is-6">
+                        <div class="image-container">
+                          <figure class="image is-4by3 image-border">
+                            <a href="https://flyers-island.herokuapp.com/" target="_blank">
+                              <img src="https://imgur.com/q0Ij6iY.jpg">
+                            </a>
+                          </figure>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <!-- King Iron paw -->
+                  <div class="container">
+                    <div class="columns is-variable is-8">
+                      <div class="column is-6">
+                        <div class="image-container">
+                          <figure class="image is-4by3 image-border">
+                            <a href="https://chaulonglindale.github.io/Project1_WDI_LDN/" target="_blank">
+                              <img src="https://media.giphy.com/media/5tvPLDM20Yvgjj1vgV/giphy.gif">
+                            </a>
+                          </figure>
+                        </div>
+                      </div>
+                      <div class="column">
+                        <h1 class="title">King Ironpaw: A pinecone too many</h1>
+                        <h2 class="subtitle">
+                          Pinecone throwing extravaganza</h2>
+                          <h1>
+                            <strong>Technologies used:</strong>
+                            <br> JavaScript | HTML5 | CSS3 | jQuery</h1>
+                            <br>
+                            <div class="icons">
+                              <i class="devicon-html5-plain"></i>
+                              <i class="devicon-css3-plain"></i>
+                              <i class="devicon-javascript-plain"></i>
+                              <i class="devicon-sass-plain"></i>
+                              <i class="devicon-jquery-plain"></i>
+                            </div>
+                            <br>
+                            <div>
+                              <a class="button is-primary" href="https://github.com/ChauLongLindaLe/Project1_WDI_LDN" target="_blank">
+                                <span class="icon">
+                                  <i class="fab fa-github"></i>
+                                </span>
+                                <span>View on Github</span>
+                              </a>
+                              <a class="button is-primary" href="https://chaulonglindale.github.io/Project1_WDI_LDN/" target="_blank">
+                                <span class="icon">
+                                  <i class="fas fa-desktop"></i>
+                                </span>
+                                <span>Go to site</span>
+                              </a>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </section>
+                    <section id="experience" class="section reveal load-hidden">
+                      <div class="container">
+                        <h1 class="num">04</h1><h2 class="title section-title">Work Experience</h2>
+                        <h4 class="subtitle">Recruitment Consultant</h4>
+                        <h2>Osmii</h2>
+                        <h2>Sep - Dec 2017</h2>
+                        <p>
+                          Working as a consultant with pre-IPO tech vendors across EMEA with specific focus on  DACH, Nordics and the UK to find executive/senior level sales and technical hires.
+                        </p>
+                        <p>
+                          <strong>Responsibilities included:</strong>
+                          <ul>
+                            <li>Focusing on digital advertising and e-commerce ecosystems in the  executive digital media team offering fully retained recruitment solutions. </li>
+                            <li>Identified, headhunted and shortlisted candidates to assess their eligibility for retained assignments.</li>
+                            <li>Interviewed candidates to assess their eligibility for roles.</li>
+                            <li>Assisted with the training of two junior recruitment consultants.</li>
+                          </ul>
+                        </p>
+
+                        <h2>Geo-environmental/ Geotechnical Consultant</h2>
+                        <h2>RGB Network</h2>
+                        <h2>Dec 2015 - September 2017</h2>
+                        <p>
+                          Working as a consultant with private sector clients in Civil & Structural Engineering sector typically placing Geotechnical, Geoenvironmental and Structural design staff.
+                        </p>
+                        <p><strong>Responsibilities included:</strong>
+                          <ul>
+                            <li>Business development calls and attended client visits to develop relationships.</li>
+                            <li>Delivering KPIs to ensure targets are hit and exceeded.</li>
+                            <li>Identified and interviewed candidates to assess their eligibility for roles.</li>
+                            <li>Promoted job opportunities to candidates and managed expectations.</li>
+                            <li>Pro-actively mapping market, undertaking business development, arranging and attending meetings to identify opportunities and marketing candidates directly to the client base.</li>
+                          </ul>
+                        </p>
+                        <a class="button is-primary is-outlined" href="images/linda_le_CV_2018.pdf" target="_blank">
+                          <span class="icon">
+                            <i class="far fa-file-pdf"></i>
+                          </span>
+                          <span>Download my CV</span>
+                        </a>
+                      </div>
+
+
+                    </section>
+                    <section id="education" class="section reveal load-hidden">
+                      <div class="container">
+                        <h1 class="num">05</h1><h1 class="title">Education</h1>
+                        <h2 class="subtitle">BA (Hons)English Language and Creative Writing 2:1 - University of Gloucestershire ‘12-’15</h2>
+                        <p>Studying English allowed me to develop my ability to communicate effectively but also to think creatively. How best can I tackle this issue and make it easy for another to understand? </p>
+                      </div>
+                    </section>
+                    <section id="pitch" class="section reveal load-hidden">
+                      <div class="container">
+                        <h1 class="num">06</h1><h1 class="title">“Jack of all trades, master of none”</h1>
+
+                        <p>Often a phrase that we associate that in the process of trying to learn many things, you give up the mastery of any of them. I believe this to be a myth.</p>
+
+                        <p>In all facets of my life I try to make sure that I am as multi-disciplined as possible. I am a Junior Web Developer, national representative for Great Britain in kendo, Aerialist and a Destroyer of Nutella jars. The saying would indicate that I could only ever achieve greatness in one, or mediocrity in all. However  as David Cole, Designer at  Quora states.</p>
+
+                        <em>“Learning is not a zero-sum activity.
+                          These skills are not mutually exclusive. Picking up Python won't make you forget how to kern.
+                          ” </em>
+                          <br />
+                          <small>Or in my case.. Eating nutella?</small>
+
+
+                          <h2 class="subtitle">The pros of being a jack</h2>
+
+                          <p>As of April 2018, I enrolled onto General Assembly’s Web Development Immersive, an intense  12-week course with 4 projects to complete that serve to reflect our development and learning of languages and concepts covered. Since starting I have found that there are more languages, frameworks and technologies out there than you can shake a stick at, and that being versatile and open to change bodes well in a continually-evolving industry.</p>
+
+                          <h2 class="subtitle">Life after GA</h2>
+                          <p>I have found a love for creating and problem solving in a way that I didn’t know could really exist before. The want to continue learning, developing, creating is something that I strive for and I want to work in an environment that carries a similar jack-ethos.</p>
+
+                          <p>I close on one last note, the phrase I opened with is (rarely) expanded to the full couplet which reads:</p>
+
+                          <em>“Jack of all trades, master of none,
+                            though oftentimes better than master of one.”</em>
+                          </div>
+                        </section>
+                        <section id="about" class="section reveal load-hidden">
+
+                        </section>
+                      </main>
+                      <footer class="footer" id="contact">
+                        <div class="container has-text-centered">
+                          <div class="row">
+                            <h1>What's next</h1>
+                            <h2>Let's work together<ahref="mailto:chaulonglindale@gmail.com?" target="_top">write me an email</a></h2>
+                            <a href="https://github.com/ChauLongLindaLe"><i class="fa fa-github"></i></a>
+                            <a href="https://www.linkedin.com/in/chaulonglindale"><i class="fa fa-linkedin"></i></a>
+                            <a href="../#/contactform"><i class="fa fa-envelope-o"></i></a>
+                          </div>
+                        </div>
+                      </footer>
+                      <!-- JQUERY -->
+                      <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+                      crossorigin="anonymous"></script>
+                      <script src="./js/app.js" charset="utf-8"></script>
+                    </body>
+                    </html>
